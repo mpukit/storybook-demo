@@ -1,4 +1,4 @@
-import { configure } from '@storybook/react';
+import { configure } from '@storybook/html';
 
 function loadStories() {
   require('../src/stories');
