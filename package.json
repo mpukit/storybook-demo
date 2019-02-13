@@ -33,6 +33,9 @@
     "@storybook/html": "^4.1.11",
     "@storybook/react": "^4.1.11",
     "@storybook/storybook-deployer": "^2.8.1",
-    "babel-loader": "^8.0.5"
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1"
   }
 }
