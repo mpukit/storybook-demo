@@ -6,7 +6,7 @@ import { action } from '@storybook/addon-actions';
 //import Center from '../decorators/center';
 
 storiesOf('Examples', module) // Component 
-  .add('heading', () => '<h1>Hello World</h1>')
+  .add('heading', () => '<h1>Hello Worlds</h1>')
   .add('another heading', () => '<h2>Hello Again World</h2>')
   .add('button', () => {
     const button = document.createElement('button');

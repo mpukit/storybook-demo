@@ -1,14 +1,6 @@
-import { configure, addDecorator } from '@storybook/html';
-
-function loadStories() {
-  require('../src/stories'); // load stories in index.js
-  // You can require as many stories as you need.
-}
-
-configure(loadStories, module);
-
-
+import { addDecorator, configure } from '@storybook/html';
 import { withOptions } from '@storybook/addon-options';
+import { themes } from '@storybook/components';
 
 // Option defaults:
 addDecorator(
@@ -17,12 +9,12 @@ addDecorator(
      * name to display in the top left corner
      * @type {String}
      */
-    name: 'Storybook',
+    name: 'Storybook Demo', // ??
     /**
      * URL for name in top left corner to link to
      * @type {String}
      */
-    url: '#',
+    url: 'http://www.google.com', // ?
     /**
      * show story component as full screen
      * @type {Boolean}
@@ -86,7 +78,14 @@ addDecorator(
      * @type {Boolean}
      */
     enableShortcuts: false, // true by default
+
+    theme: themes.dark,
   })
 );
 
-configure(() => require('../src/stories'), module);
+function loadStories() {
+  require('../src/stories'); // load stories in index.js
+  // You can require as many stories as you need.
+}
+
+configure(loadStories, module);
